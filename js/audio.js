@@ -8,7 +8,7 @@ times.forEach(function (item) {
 	const audio = item.nextElementSibling;
 	setTimeout(function () {
 		item.textContent = startedTime(audio.duration);
-	}, 300);
+	}, 100);
 
 })
 
