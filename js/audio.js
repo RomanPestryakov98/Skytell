@@ -6,6 +6,8 @@ const times = document.querySelectorAll('.player__time');
 
 times.forEach(function (item) {
 	const audio = item.nextElementSibling;
+	audio.play();
+	audio.pause();
 	setTimeout(function () {
 		item.textContent = startedTime(audio.duration);
 	}, 100);
